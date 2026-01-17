@@ -135,8 +135,12 @@ export const SideBarData = [
     hasChildren: true,
     subMenu: [
       {
-        label: "Purchase Report",
-        route: "/purchase/purchase-report",
+        label: "Clients Activity",
+        route: "/activity-logs/clients-activity",
+      },
+      {
+        label: "Employee Activity",
+        route: "/activity-logs/employee-activity",
       },
     ]
   },
@@ -144,25 +148,11 @@ export const SideBarData = [
     label: "MIS Report",
     heroIcon: "ri-live-line",
     route: "/mis-report",
-    hasChildren: true,
-    subMenu: [
-      {
-        label: "Purchase Report",
-        route: "/purchase/purchase-report",
-      },
-    ]
   },
    {
     label: "GST Filing",
     heroIcon: "ri-live-line",
     route: "/gst-filing",
-    hasChildren: true,
-    subMenu: [
-      {
-        label: "Purchase Report",
-        route: "/purchase/purchase-report",
-      },
-    ]
   },
    {
     label: "Data Retrieval",

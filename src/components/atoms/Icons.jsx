@@ -50,6 +50,20 @@ export const InvoiceAction = ({ row }) => {
   );
 };
 
+export const SubTask = ({ row }) => {
+  const router = useRouter();
+  return (
+    <button
+      onClick={() => router.push(`/task-management/task/${row.id}`)}
+      className="flex items-center gap-1 text-emerald-600 bg-emerald-50 rounded-full hover:text-emerald-700 px-2"
+      title="Add Invoice"
+    >
+      <i className="ri-add-circle-line text-lg" />
+      <span className="text-xs font-medium">Sub Task</span>
+    </button>
+  );
+};
+
 /* Delete */
 export const DeleteAction = ({ row }) => (
   <button
@@ -81,6 +95,21 @@ export const Download = ({ row }) => (
     <i className="ri-download-2-line text-lg" />
   </button>
 );
+export const Downloadbtn = ({ row }) => {
+  const router = useRouter();
+
+  return (
+    <button
+      onClick={() => router.push(`/gst-filing/gst-filling-management/access-clients/${row.id}`)}
+      className="flex items-center gap-2 rounded-md bg-blue-600 px-3 py-1.5
+      text-xs font-medium text-white hover:bg-blue-700"
+      title="Access Account"
+    >
+      <i className="ri-download-2-line text-sm" />
+      <span>Access Account</span>
+    </button>
+  );
+};
 
 export const MoreActions = ({ row }) => (
   <button className="text-xl text-gray-500 hover:text-gray-800">

@@ -1,8 +1,8 @@
 "use client";
+
 import React from "react";
 import clsx from "clsx";
 
-/* Trend helper */
 const getTrend = (value) => {
   if (value >= 0) {
     return {
@@ -24,33 +24,31 @@ const StatsCard = ({
   change = 0,
   percent = 0,
   invoices = 0,
-  variant = "dashboard", // dashboard | detailed
+  variant = "dashboard", // dashboard | detailed | activity
 }) => {
   const trend = getTrend(change);
 
-  // 🔥 smart detection
   const hasIcon = Boolean(icon && iconBg);
   const baseColor = hasIcon ? iconBg : null;
   const textColor = hasIcon ? iconBg.replace("bg-", "text-") : null;
 
   return (
     <div className="rounded-xl border border-gray-200 bg-white p-4">
-      {/* TOP */}
+      
       <div className="flex items-start gap-3">
-        {/* Icon only when provided */}
+       
         {hasIcon && (
           <div
             className={clsx(
-              "h-10 w-10 rounded-lg flex items-center justify-center text-white shrink-0",
+              "h-10 w-10 rounded-lg flex items-center justify-center shrink-0",
               baseColor
             )}
           >
             <i className={icon} />
           </div>
         )}
-
         <div>
-          <p className="font-inter text-[0.85rem]  text-gray-500">
+          <p className="font-inter text-[0.85rem] text-gray-500">
             {title}
           </p>
           <h2 className="font-inter text-[1rem] font-semibold text-gray-900 mt-0.5">
@@ -58,17 +56,16 @@ const StatsCard = ({
           </h2>
         </div>
       </div>
+
       {variant === "dashboard" && hasIcon && (
         <>
-          {/* Progress */}
           <div className="mt-3 h-1.5 w-full rounded bg-gray-200">
             <div
               className={clsx("h-1.5 rounded", baseColor)}
-              style={{ width: `${60}%` }}
+              style={{ width: "60%" }}
             />
           </div>
 
-          {/* Bottom */}
           <div className="mt-3 flex items-center gap-1">
             <i className={clsx(trend.icon, textColor)} />
             <span
@@ -85,16 +82,30 @@ const StatsCard = ({
           </div>
         </>
       )}
+      
       {variant === "detailed" && (
         <div className="mt-3 flex items-center justify-between text-xs">
           <div className="font-inter font-normal text-[0.875rem] text-gray-600 tracking-[0.004375rem]">
             No. of Invoice{" "}
-            <span className="font-inter font-semibold text-[0.875rem] tracking-[0.004375rem]">{invoices}</span>
+            <span className="font-inter font-semibold text-[0.875rem] tracking-[0.004375rem]">
+              {invoices}
+            </span>
           </div>
 
-          <div className={clsx("flex items-center gap-1 font-inter font-normal text-[1.25rem] tracking-[0.004375rem]", trend.color)}>
+          <div
+            className={clsx(
+              "flex items-center gap-1 font-inter font-normal text-[1.25rem] tracking-[0.004375rem]",
+              trend.color
+            )}
+          >
             {change > 0 ? "↑" : "↓"} {Math.abs(change)}%
           </div>
+        </div>
+      )}
+      
+      {variant === "activity" && (
+        <div className="mt-2">
+          
         </div>
       )}
     </div>

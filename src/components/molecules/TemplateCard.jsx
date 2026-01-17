@@ -24,8 +24,6 @@ export default function TemplateCard({
       <p className="mt-1 text-xs text-gray-500">
         {description}
       </p>
-
-      {/* Buttons */}
       <div className="mt-4 flex gap-2">
         <button
           onClick={onSecondary}
