@@ -8,6 +8,7 @@ import Button from "@/components/common/Button";
 import { ArrowLeft } from "lucide-react";
 import InfoCard from "@/components/molecules/InfoCard";
 import InformationCard from "@/components/molecules/InformationCard";
+import Link from "next/link";
 
 const GSTRSupplies = () => {
   const [openInvoiceModal, setOpenInvoiceModal] = useState(false);
@@ -15,6 +16,7 @@ const GSTRSupplies = () => {
 
   return (
     <div className="w-full mt-4">
+      <Link href="/gst-filing">
       <Button
         variant="outline"
         className="flex items-center gap-2 w-fit"
@@ -22,6 +24,7 @@ const GSTRSupplies = () => {
         <ArrowLeft size={16} strokeWidth={2.5} />
         Back to Dashboard
       </Button>
+      </Link>
 
       <div className="bg-white p-4 sm:p-5 rounded-xl mt-5 sm:mt-7">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">

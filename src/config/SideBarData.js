@@ -72,19 +72,19 @@ export const SideBarData = [
       },
       {
         label: "Sale",
-        route: "/sale-invoice/sale",
+        route: "",
       },
        {
         label: "E-Invoice",
-        route: "/sale-invoice/e-invoice",
+        route: "",
       },
        {
         label: "Sale return",
-        route: "/sale-invoice/sale-return",
+        route: "",
       },
        {
         label: "Eway Bill",
-        route: "/sale-invoice/eway-bill",
+        route: "",
       },
        {
         label: "Invoice Templates",
@@ -104,11 +104,11 @@ export const SideBarData = [
       },
       {
         label: "Purchase Return",
-        route: "/purchase/purchase-return",
+        route: "",
       },
       {
         label: "Purchase Order",
-        route: "/purchase/purchase-report",
+        route: "",
       },
       {
         label: "Add Purchase",
@@ -119,14 +119,7 @@ export const SideBarData = [
   {
     label: "Settings",
     heroIcon: "ri-live-line",
-    route: "/settings",
-    hasChildren: true,
-    subMenu: [
-      {
-        label: "Purchase Report",
-        route: "/purchase/purchase-report",
-      },
-    ]
+    route: "",
   },
    {
     label: "Activity Logs",
@@ -157,14 +150,8 @@ export const SideBarData = [
    {
     label: "Data Retrieval",
     heroIcon: "ri-live-line",
-    route: "/settings",
-    hasChildren: true,
-    subMenu: [
-      {
-        label: "Purchase Report",
-        route: "/purchase/purchase-report",
-      },
-    ]
+    route: "",
+  
   },
 
 ];

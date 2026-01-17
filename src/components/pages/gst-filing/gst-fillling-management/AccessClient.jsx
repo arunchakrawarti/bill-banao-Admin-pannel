@@ -29,7 +29,7 @@ const AccessClient = () => {
                         {
                             text: "Back",
                             variant: "outline",
-                            route: "",
+                            route: "/gst-filing/gst-filling-management",
                             icon: <ArrowLeft size={14} />,
                             onClick: () => console.log("Back"),
                         },

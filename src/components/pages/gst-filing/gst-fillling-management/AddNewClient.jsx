@@ -9,7 +9,7 @@ const AddNewClient = () => {
     return (
         <div>
             <div>
-                <p className="flex items-center gap-1 font-inter font-normal text-[0.75rem] tracking-[-0.006rem] text-[#6A7282]">
+                <p className="flex items-center gap-1 font-inter font-normal text-[0.75rem] tracking-[-0.006rem] text-[#6A7282] mb-5">
                     <span>Admin Panel</span>
                     <ChevronRight size={12} />
                     <span>GST Filing</span>
@@ -24,7 +24,7 @@ const AddNewClient = () => {
                         {
                             text: "Back",
                             variant: "outline",
-                            route: "",
+                            route: "/gst-filing/gst-filling-management",
                             icon: <ArrowLeft size={14} />,
                             onClick: () => console.log("Back"),
                         },
@@ -32,7 +32,7 @@ const AddNewClient = () => {
                 />
             </div>
 
-            <div className="rounded-xl border border-gray-200 bg-white p-5">
+            <div className="rounded-xl border border-gray-200 bg-white mt-5 p-5">
                 <div className="mb-4">
                     <Input
                         label="GSTIN"

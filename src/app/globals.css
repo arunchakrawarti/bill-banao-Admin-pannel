@@ -10,11 +10,14 @@
   --color-text: var(--text-primary);
 }
 
-.scrollbar-hidden {
-  scrollbar-width: none;
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
 }
 
-/* font utilities */
 .font-inter {
   font-family: var(--font-inter);
 }

@@ -1,17 +1,29 @@
 import Heading from '@/components/atoms/Heading'
 import Badge from '@/components/common/Badge'
+import Button from '@/components/common/Button'
 import Input from '@/components/common/Input'
 import InfoCard from '@/components/molecules/InfoCard'
 import InformationCard from '@/components/molecules/InformationCard'
+import { ArrowLeft } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 const GSTRitcStatement = () => {
     return (
-        <div>
+        <div className='mt-5'>
+           <Link href="/gst-filing">
+      <Button
+        variant="outline"
+        className="flex items-center gap-2 w-fit"
+      >
+        <ArrowLeft size={16} strokeWidth={2.5} />
+        Back to Dashboard
+      </Button>
+      </Link>
             <div className='bg-white rounded-md p-4 border border-gray-300 mt-7'>
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <Heading
-                        title="GSTR-2A - Auto-drafted ITC Statement"
+                        title="GSTR-2B - Auto-drafted ITC Statement"
                         paragraph="Auto-populated details of inward supplies (Read Only)"
                     />
 

@@ -63,13 +63,12 @@ export const clientInvoiceColumns = [
 export const clientInvoiceData = [
   {
     id: 1,
-    route: "/sale-invoice/inv-2024-001",
     invoiceNo: "INV-2024-001",
     customer: {
       name: "John",
       phone: "+5437272829",
       avatar: "🧑",
-      route: "/clients/john",
+     
     },
     createdOn: "2024-01-15",
     total: 5000,
@@ -81,13 +80,12 @@ export const clientInvoiceData = [
   },
   {
     id: 2,
-    route: "/sale-invoice/inv-2024-002",
     invoiceNo: "INV-2024-002",
     customer: {
       name: "John",
       phone: "+5437272829",
       avatar: "🧑",
-      route: "/clients/john",
+     
     },
     createdOn: "2024-01-16",
     total: 8000,
@@ -99,13 +97,12 @@ export const clientInvoiceData = [
   },
    {
     id: 1,
-    route: "/sale-invoice/inv-2024-001",
     invoiceNo: "INV-2024-001",
     customer: {
       name: "John",
       phone: "+5437272829",
       avatar: "🧑",
-      route: "/clients/john",
+     
     },
     createdOn: "2024-01-15",
     total: 5000,
@@ -117,13 +114,12 @@ export const clientInvoiceData = [
   },
    {
     id: 1,
-    route: "/sale-invoice/inv-2024-001",
     invoiceNo: "INV-2024-001",
     customer: {
       name: "John",
       phone: "+5437272829",
       avatar: "🧑",
-      route: "/clients/john",
+      
     },
     createdOn: "2024-01-15",
     total: 5000,
@@ -135,13 +131,12 @@ export const clientInvoiceData = [
   },
    {
     id: 1,
-    route: "/sale-invoice/inv-2024-001",
     invoiceNo: "INV-2024-001",
     customer: {
       name: "John",
       phone: "+5437272829",
       avatar: "🧑",
-      route: "/clients/john",
+     
     },
     createdOn: "2024-01-15",
     total: 5000,
@@ -153,13 +148,12 @@ export const clientInvoiceData = [
   },
    {
     id: 1,
-    route: "/sale-invoice/inv-2024-001",
     invoiceNo: "INV-2024-001",
     customer: {
       name: "John",
       phone: "+5437272829",
       avatar: "🧑",
-      route: "/clients/john",
+      
     },
     createdOn: "2024-01-15",
     total: 5000,

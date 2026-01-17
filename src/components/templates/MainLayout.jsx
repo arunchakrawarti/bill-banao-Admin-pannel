@@ -12,7 +12,7 @@ const MainLayout = ({ children, title }) => {
   return (
     <div className="flex w-full h-auto bg-gray-100 md:bg-gray-50 ">
       <div
-        className="hidden lg:flex bg-black/20 backdrop-blur-sm w-[19%]"
+        className="hidden lg:flex bg-black/20 backdrop-blur-sm w-[19%] "
         onClick={() => setDrawerOpen(false)}
       >
       </div>

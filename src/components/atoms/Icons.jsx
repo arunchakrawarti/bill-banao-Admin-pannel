@@ -7,7 +7,7 @@ export const ViewAction = ({ row }) => {
   return (
     <button
       onClick={() => router.push(row.route)}
-      className="text-blue-600 hover:text-blue-800"
+      className="text-blue-600 hover:text-blue-800 cursor-pointer"
       title="View"
     >
       <i className="ri-eye-line text-lg" />

@@ -1,4 +1,4 @@
-
+"use client"
 import Heading from '@/components/atoms/Heading';
 import Button from '@/components/common/Button';
 import InformationCard from '@/components/molecules/InformationCard';
@@ -11,7 +11,7 @@ const GstManagement = () => {
    
   return (
     <div>
-        <p className="flex items-center gap-1 font-inter font-normal text-[0.75rem] tracking-[-0.006rem] text-[#6A7282]">
+        <p className="flex items-center gap-1 font-inter font-normal text-[0.75rem] tracking-[-0.006rem] text-[#6A7282] mb-3">
         <span>Admin Panel</span>
         <ChevronRight size={12} />
         <span>GST Filing</span>
@@ -31,7 +31,7 @@ const GstManagement = () => {
 
       </div>
 
-<div className="flex flex-col gap-6 w-full mt-5 bg-[#F9FAFB]">
+<div className="flex flex-col gap-6 w-full mt-5 ">
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     

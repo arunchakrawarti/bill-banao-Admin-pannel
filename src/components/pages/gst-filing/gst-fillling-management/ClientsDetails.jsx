@@ -13,7 +13,7 @@ const ClientsDetails = () => {
     return (
         <div>
             <div>
-                <p className="flex items-center gap-1 font-inter font-normal text-[0.75rem] tracking-[-0.006rem] text-[#6A7282]">
+                <p className="flex items-center gap-1 font-inter font-normal text-[0.75rem] tracking-[-0.006rem] text-[#6A7282] mb-3">
                     <span>Admin Panel</span>
                     <ChevronRight size={12} />
                     <span>GST Filing</span>
@@ -28,16 +28,14 @@ const ClientsDetails = () => {
                         {
                             text: "Back to Client List",
                             variant: "outline",
-                            route: "",
+                            route: "/gst-filing/gst-filling-management/access-clients",
                             icon: <ArrowLeft size={14} />,
                             onClick: () => console.log("Back"),
                         },
                     ]}
                 />
             </div>
-            <div className="flex flex-col gap-4">
-
-                {/* 🔐 Security Notice */}
+            <div className="flex flex-col gap-4 mt-5">
                 <div className="flex items-start gap-2 rounded-lg border border-amber-200 bg-amber-50 p-3">
                     <ShieldCheck size={16} className="mt-0.5 text-amber-600" />
                     <p className="text-xs font-inter text-amber-700">
@@ -48,7 +46,6 @@ const ClientsDetails = () => {
                     </p>
                 </div>
 
-                {/* 📄 Client Information Card */}
                 <div className="rounded-xl border border-gray-200 bg-white p-4">
                     <h3 className="mb-4 text-sm font-semibold text-gray-900">
                         Client Information
@@ -90,12 +87,11 @@ const ClientsDetails = () => {
                 </div>
                 <div className="rounded-xl border border-gray-200 bg-white p-5">
 
-                    {/* Title */}
                     <h3 className="mb-4 text-sm font-semibold text-gray-900">
                         GST Portal Credentials
                     </h3>
 
-                    {/* GST Username */}
+                    
                     <div className="mb-4">
                         <Input
                             label="GST Username*"
@@ -110,7 +106,7 @@ const ClientsDetails = () => {
                         </p>
                     </div>
 
-                    {/* Password */}
+                    
                     <div className="mb-6">
                         <Input
                             label="Password*"
@@ -124,7 +120,7 @@ const ClientsDetails = () => {
                         </p>
                     </div>
 
-                    {/* Actions */}
+                   
                     <div className="flex items-center gap-3 border-t border-gray-200 pt-4">
                         <Button variant="danger"
                             icon={LogIn}     
@@ -137,8 +133,6 @@ const ClientsDetails = () => {
                             
                         </Button>
                     </div>
-
-                    {/* Footer Note */}
                     <p className="mt-4 text-xs text-gray-500">
                         <span className="font-medium">Note:</span>{" "}
                         This is a secure admin interface to access client GST accounts for
