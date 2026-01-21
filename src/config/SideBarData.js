@@ -20,7 +20,7 @@ export const SideBarData = [
       },
        {
         label: "Add Employee",
-        route: "",
+        route: "/staff-management/add-employee",
       },
        {
         label: "Departments",
@@ -72,19 +72,19 @@ export const SideBarData = [
       },
       {
         label: "Sale",
-        route: "",
+        route: "/sale-invoice/sale",
       },
        {
         label: "E-Invoice",
-        route: "",
+        route: "/sale-invoice/e-invoice",
       },
        {
         label: "Sale return",
-        route: "",
+        route: "/sale-invoice/sale-return",
       },
        {
         label: "Eway Bill",
-        route: "",
+        route: "/sale-invoice/eway-bill",
       },
        {
         label: "Invoice Templates",
@@ -104,11 +104,11 @@ export const SideBarData = [
       },
       {
         label: "Purchase Return",
-        route: "",
+        route: "/purchase/purchase-return",
       },
       {
         label: "Purchase Order",
-        route: "",
+        route: "/purchase/purchase-order",
       },
       {
         label: "Add Purchase",
@@ -146,12 +146,6 @@ export const SideBarData = [
     label: "GST Filing",
     heroIcon: "ri-live-line",
     route: "/gst-filing",
-  },
-   {
-    label: "Data Retrieval",
-    heroIcon: "ri-live-line",
-    route: "",
-  
-  },
+  }
 
 ];
