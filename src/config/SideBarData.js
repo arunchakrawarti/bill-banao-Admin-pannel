@@ -20,7 +20,7 @@ export const SideBarData = [
       },
        {
         label: "Add Employee",
-        route: "/staff-management/add-employee",
+        route: "",
       },
        {
         label: "Departments",
