@@ -55,12 +55,19 @@ const PurchaseReturn = () => {
           
           {/* Search */}
           <div className="w-full lg:max-w-sm">
-            <Input
-              type="text"
-              icon="ri-search-line"
-              placeholder="Search invoices..."
-              className="w-full rounded-lg border border-gray-200 px-4 py-2 text-sm h-11 focus:border-indigo-500 focus:ring-indigo-500"
-            />
+           <Input
+  type="select"
+  icon="ri-search-line"
+  placeholder="Select document type"
+  options={[
+    { label: "Purchase Return", value: "purchase-return" },
+    { label: "Purchase Return", value: "purchase-order" },
+  ]}
+  labelKey="label"
+  valueKey="value"
+  className="w-full rounded-lg border border-gray-200 px-4 py-2 text-sm h-11 focus:border-indigo-500 focus:ring-indigo-500"
+/>
+
           </div>
 
           {/* Buttons */}
