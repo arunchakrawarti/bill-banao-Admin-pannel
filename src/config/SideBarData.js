@@ -119,7 +119,7 @@ export const SideBarData = [
   {
     label: "Settings",
     heroIcon: "ri-live-line",
-    route: "",
+    route: "/setting",
   },
    {
     label: "Activity Logs",
